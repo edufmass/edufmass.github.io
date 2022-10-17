@@ -26,22 +26,33 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-dark bg-dark shadow-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
                 <div class="container-fluid px-5">
                     <a href="./index.html" class="navbar-brand d-flex align-items-center ms-5">
                         <img src="./images/codoacodo.png" width="110" />
                         <strong>Conf Bs As</strong>
                     </a>
-                    <ul class="nav me-5">
-                        <li class="nav-item"><a href="#" class="nav-link text-white active" aria-current="page">La conferencia</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">Los oradores</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-secondary">El lugar y la fecha</a></li>
+                    <!--ul class="nav me-5">
                         <li class="nav-item"><a href="#" class="nav-link text-secondary">Convi&eacute;rtete en orador</a></li>
                         <li class="nav-item"><a href="./tickets.html" class="nav-link text-success">Comprar tickets</a></li>
-                    </ul>
+                    </ul-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div id="navtop" class="navbar-nav me-5">
+                          <a class="nav-link active" href="#">La conferencia</a>
+                          <a class="nav-link " href="./index.html#oradores">Los oradores</a>
+                          <a class="nav-link " href="">El lugar y la fecha</a>
+                          <a class="nav-link text-secondary" href="./index.html#anotate">Conviértete en orador</a>
+                          <a class="nav-link active text-success " href="./tickets.html"><p>Comprar ticket</p></a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
+
         <main>
             
             <section class="mt-2 mb-2">
