@@ -16,7 +16,7 @@ const btnClear_click = (spnST) => {
 
 const frmTickets_submit  = (e, spnST) => {
     e.preventDefault();
-    let frmData = new FormData(e.originalTarget);
+    let frmData = new FormData(e.currentTarget);
     let total = parseInt(frmData.get('amount')) * 200 * (100 - parseInt(frmData.get('category'))) / 100;
     spnST.innerText = total;
 }
